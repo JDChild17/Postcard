@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED3F1A9D19CA670900C92A6A /* SagradaFamilia.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED3F1A9C19CA670900C92A6A /* SagradaFamilia.jpeg */; };
 		ED4B48B119C2417700A06C55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4B48B019C2417700A06C55 /* AppDelegate.swift */; };
 		ED4B48B319C2417700A06C55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4B48B219C2417700A06C55 /* ViewController.swift */; };
 		ED4B48B619C2417700A06C55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4B48B419C2417700A06C55 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED3F1A9C19CA670900C92A6A /* SagradaFamilia.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SagradaFamilia.jpeg; sourceTree = "<group>"; };
 		ED4B48AB19C2417700A06C55 /* Postcard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Postcard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4B48AF19C2417700A06C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED4B48B019C2417700A06C55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,7 +80,9 @@
 				ED4B48B019C2417700A06C55 /* AppDelegate.swift */,
 				ED4B48B219C2417700A06C55 /* ViewController.swift */,
 				ED4B48B419C2417700A06C55 /* Main.storyboard */,
+				ED4B48CD19C32CDD00A06C55 /* Postcard */,
 				ED4B48B719C2417700A06C55 /* Images.xcassets */,
+				ED3F1A9C19CA670900C92A6A /* SagradaFamilia.jpeg */,
 				ED4B48AE19C2417700A06C55 /* Supporting Files */,
 			);
 			path = Postcard;
@@ -107,6 +111,14 @@
 				ED4B48C219C2417700A06C55 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED4B48CD19C32CDD00A06C55 /* Postcard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Postcard;
+			path = ../../../Downloads/Postcard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +203,7 @@
 			files = (
 				ED4B48B619C2417700A06C55 /* Main.storyboard in Resources */,
 				ED4B48B819C2417700A06C55 /* Images.xcassets in Resources */,
+				ED3F1A9D19CA670900C92A6A /* SagradaFamilia.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +408,7 @@
 				ED4B48C919C2417700A06C55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED4B48CA19C2417700A06C55 /* Build configuration list for PBXNativeTarget "PostcardTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +417,7 @@
 				ED4B48CC19C2417700A06C55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
