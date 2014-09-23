@@ -11,12 +11,10 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var hiddenLabel: UILabel!
-    
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var oneText: UITextField!
-
-    @IBOutlet weak var typeSomeText: UITextField!
-    
     @IBOutlet weak var mailButton: UIButton!
+    @IBOutlet weak var typeSomeText: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,10 +28,14 @@ class ViewController: UIViewController {
 
     @IBAction func sendMailButton(sender: AnyObject) {
         hiddenLabel.text = oneText.text
-        hiddenLabel.sizeToFit()
-        // Need some code to make resizing work the first time
+        oneText.text = ""
         hiddenLabel.hidden = false
-        oneText.resignFirstResponder()
+        hiddenLabel.textColor = UIColor.purpleColor()
+        nameLabel.text = typeSomeText.text
+        typeSomeText.text = ""
+        nameLabel.hidden = false
+        nameLabel.textColor = UIColor.blueColor()
+        // oneText.resignFirstResponder()
         mailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
     }
     }

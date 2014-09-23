@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uWc-K0-HLq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uWc-K0-HLq">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -43,10 +43,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4">
-                        <size key="portraitSize" width="320" height="568"/>
-                        <size key="landscapeSize" width="568" height="320"/>
-                    </simulatedScreenMetrics>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zik-hh-tHl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,7 +73,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="7" y="64" width="297" height="62"/>
+                                    <rect key="frame" x="7" y="64" width="297" height="28"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Type something here." borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yjs-f1-2hJ">
@@ -107,6 +104,15 @@
                                     <rect key="frame" x="0.0" y="134" width="194" height="30"/>
                                 </variation>
                             </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hidden" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwN-bN-x4a">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="7" y="105" width="187" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -116,6 +122,7 @@
                                 <exclude reference="yjs-f1-2hJ"/>
                                 <exclude reference="6H9-GQ-xIc"/>
                                 <exclude reference="xlH-oD-Hw4"/>
+                                <exclude reference="IwN-bN-x4a"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -125,12 +132,14 @@
                                 <include reference="yjs-f1-2hJ"/>
                                 <include reference="6H9-GQ-xIc"/>
                                 <include reference="xlH-oD-Hw4"/>
+                                <include reference="IwN-bN-x4a"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="hiddenLabel" destination="duK-GQ-fdY" id="Asv-cO-Hed"/>
                         <outlet property="mailButton" destination="6H9-GQ-xIc" id="YvL-Tq-qr9"/>
+                        <outlet property="nameLabel" destination="IwN-bN-x4a" id="Wqk-py-d1a"/>
                         <outlet property="oneText" destination="yjs-f1-2hJ" id="NHV-Je-3dl"/>
                         <outlet property="typeSomeText" destination="yjs-f1-2hJ" id="TKo-2L-0qa"/>
                     </connections>
@@ -144,10 +153,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uWc-K0-HLq" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4">
-                        <size key="portraitSize" width="320" height="568"/>
-                        <size key="landscapeSize" width="568" height="320"/>
-                    </simulatedScreenMetrics>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8ps-Bi-RQC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
